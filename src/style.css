@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 30px;
+  background-color: #082434;
+  font-family: "Karla", sans-serif;
+}
+main {
+  margin: 0 auto;
+  max-width: 550px;
+  height: 700px;
+  overflow: hidden;
+  background-color: #eeeded;
+  position: relative;
+  padding-bottom: 10px;
+}
+.top-right {
+  height: 235px;
+  width: 297px;
+  position: relative;
+  right: -70%;
+  bottom: 20%;
+  background-color: rgb(253, 244, 165);
+
+  transform: rotate(-128.59deg);
+}
+.bottom-left {
+  position: relative;
+  width: 297px;
+  height: 235px;
+  border-radius: 50px;
+  top: 50%;
+  left: -149px;
+
+  background-color: rgb(200, 211, 211);
+}
+.quiz-content {
+ 
+  /*I can change width to 550px instead of 100% to fix the dsiplay issue*/
+  width: 550px;
+  position: absolute;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.questions {
+  /*I can change width to 550px instead of 100% to fix the dsiplay issue*/
+  width: 550px;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  padding: 20px 60px;
+}
+.quizzical {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 36.53px;
+}
+.start-btn {
+  height: 52px;
+  width: 193px;
+  border: none;
+  background-color: #4d5b9e;
+  color: #f5f7fb;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.question-option > button {
+  border-radius: 10px;
+  color: #959cbe;
+  border: none;
+  outline: solid 0.5px #959cbe;
+  margin: 10px 10px 0 0;
+  font-size: 12px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.question-item {
+  margin: 0;
+  color: #293264;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+}
+.check-answer-btn {
+  width: fit-content;
+  margin: 10px auto;
+  font-size: 12px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: #4d5b9e;
+  color: white;
+}
+.playing {
+  background-color: #ccd0e6;
+}
+.score {
+  display: flex;
+}
+@media (width <= 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    overflow: scroll;
+
+    width: 100%;
+  }
+  .questions,
+  .quiz-content {
+    width: 100%;
+  }
+  .top-right {
+    height: 235px;
+    width: 297px;
+    position: fixed;
+    right: -25%;
+    bottom: 80%;
+    background-color: rgb(253, 244, 165);
+    transform: rotate(-128.59deg);
+  }
+  .bottom-left {
+    position: fixed;
+    width: 297px;
+    height: 235px;
+    border-radius: 50px;
+    top: 50%;
+    left: -149px;
+
+    background-color: rgb(200, 211, 211);
+  }
+}
