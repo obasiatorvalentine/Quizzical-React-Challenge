@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Quizzical-React-Challenge/static/css/main.181b217b.css",
+    "main.js": "/Quizzical-React-Challenge/static/js/main.04cf4bb2.js",
+    "index.html": "/Quizzical-React-Challenge/index.html",
+    "main.181b217b.css.map": "/Quizzical-React-Challenge/static/css/main.181b217b.css.map",
+    "main.04cf4bb2.js.map": "/Quizzical-React-Challenge/static/js/main.04cf4bb2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.181b217b.css",
+    "static/js/main.04cf4bb2.js"
+  ]
+}
